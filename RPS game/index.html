@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+
+  <h1>Rock Paper Scissors</h1>
+
+  <div id="choices" class="allOptionContainor">
+    <button onclick="makeChoice('rock')" class="optionbutton">
+         <div class="optionImageContainor">
+            <img class="optionImage"  src="rock icon.jpg" alt="rock">
+         </div>
+         
+    </button>
+    <button onclick="makeChoice('paper')"class="optionbutton">
+         <div class="optionImageContainor">
+            <img class="optionImage"  src="paper icon.jpg" alt="paper">
+         </div>
+    </button>
+    <button onclick="makeChoice('scissors')"class="optionbutton">
+         <div class="optionImageContainor">
+            <img class="optionImage"  src="scissors icon.jpg" alt="scissors">
+         </div>
+    </button>
+  </div>
+
+  <div id="countdown" class="countdown"></div>
+  <div id="result" class="result"></div>
+  <div id="replay" style="display:none;">
+    <button onclick="playAgain(true)" class="playAgainbutton">Play Again</button>
+    <button onclick="playAgain(false)"class="playAgainbutton">Exit</button>
+  </div>
+
+  <div id="scoreboard" class="scoreboard">
+    <h3>Score</h3>
+    
+    <p class="scoreyou">You: <span class="userScore" id="userScore">0</span></p>
+    
+   
+    <p class="scorecomputer">Computer: <span id="computerScore">0</span></p>
+   
+  </div>
+
+  <script src="rock.js"></script>
+</body>
+</html>
